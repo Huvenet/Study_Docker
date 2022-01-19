@@ -17,3 +17,13 @@ Docker는 Linux 컨테이너를 만들고 사용할 수 있도록 하는 컨테�
 Docker는 이러한 컨테이너를 구축, 배포, 복사하고 한 환경에서 다른 환경으로 이동하는 등 유연하게 사용할 수 있으며, 애플리케이션을 클라우드에 최적화하도록 지원하는 기능을 가지고 있다.
 
 **즉, Docker를 사용하면 컨테이너를 매우 가벼운 모듈식 가상 머신처럼 다룰 수 있게 된다.**
+
+---
+
+[출처]
+
+[도커란 무엇인가?](https://www.redhat.com/ko/topics/containers/what-is-docker)
+
+[리눅스 컨테이너란?](https://www.redhat.com/ko/topics/containers/whats-a-linux-container)
+
+[컨테이너의 이해](https://www.redhat.com/ko/topics/containers)
