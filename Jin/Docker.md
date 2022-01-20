@@ -21,6 +21,25 @@
 - 컨테이너 실행에 필요한 파일과 설정값등을 포함하고 있는 틀
 - Image를 기반으로 Container를 만듬
 
+## 4. 예제
+
+1. WSL2 설치
+2. Docker Desktop 설치
+3. Docker hub 가입
+4. pubile repository 생성
+5. spring project 생성
+6. dockerfile 생성
+7. dockerfile build
+   - <code>docker build -t ${IMAGE_NAME:TAG} -f ./Dockerfile .</code><br>
+   -t : 태그 옵션 image 버전관리를 쉽게 하기 위해<br>
+   -f : Dockerfile의 위치 (현재 디렉토리일경우 생략 가능)
+8. docker run
+   1. local
+      - <code>docker run --name &{CONTAINER_NAME} -d -p ${HOST_PORT}&#58;&#36;{CONTAINER_PORT} ${IMAGE_NAME:TAG}</code>
+   2. remote
+      - <code>docker push ${USER_NAME}/&#36;{YOUR_REPO}</code>
+      - `run`은 IMAGE_NAME을 USER_NAME/YOUR_REPO로 사용
+
 <br>
 <br>
 <br>
