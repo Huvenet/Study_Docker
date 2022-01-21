@@ -1,0 +1,6 @@
+CREATE TABLE test
+(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(20),
+    content VARCHAR(100)
+);

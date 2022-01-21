@@ -33,9 +33,13 @@
    - <code>docker build -t ${IMAGE_NAME:TAG} -f ./Dockerfile .</code><br>
    -t : 태그 옵션 image 버전관리를 쉽게 하기 위해<br>
    -f : Dockerfile의 위치 (현재 디렉토리일경우 생략 가능)
+   - database
+     - docker build -t ${IMAGE_NAME}
 8. docker run
    1. local
       - <code>docker run --name &{CONTAINER_NAME} -d -p ${HOST_PORT}&#58;&#36;{CONTAINER_PORT} ${IMAGE_NAME:TAG}</code>
+      - database
+        - docker run --name ${DATABASE_NAME} -p {HOST_PORT}&#58;&#36;{CONTAINER_PORT} ${IMAGE_NAME}
    2. remote
       - <code>docker push ${USER_NAME}/&#36;{YOUR_REPO}</code>
       - `run`은 IMAGE_NAME을 USER_NAME/YOUR_REPO로 사용
