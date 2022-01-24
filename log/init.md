@@ -10,17 +10,34 @@
 
 **`Docker`는 `Container`형 `Application`**의 **빌드, 배치, 관리 기능을 제공하는 오픈 소스 플랫폼**이다.
 
-쉽게 말해 **`Docker`는 개발자가 개발한 `Source Code(Application)`를 실행하는 표준 방식을 제공**한다.
+**`Docker`는 개발자가 개발한 `Source Code(Application)`를 실행하는 표준 방식을 제공**한다.
 
+쉽게 말해 `Docker`는 `Container` 를 위한 운영 체제(O/S)이다.
 
 <br>
 
 **`Docker`를 통해 개발자는 `Application`을, `Container`로 `Packaging`**할 수 있다.
 
+<br>
 
-`Docker`는 `Container` 를 위한 운영 체제(O/S)이다.
+
+**아래 그림**은 **`Container`와 `가상 머신(Virtual Machine)`의 차이점**을 보여준다.
+
 
 ![img.png](img.png)
+
+
+**`VM` 환경에서는 Server 위 `Hypervisor`를 통해 여러개의 `O/S`를 구동**시켜,
+
+**다수의 Application을 구동 시키는 형식**이지만,
+
+<br>
+
+**`Container`의 경우 하나의 `O/S`위**에,
+
+**`Docker Engine`내에서 여러개의 `Container`를 구동**시켜,
+
+**다수의 Application을 구동** 시킬 수 있다.
 
 
 ---
@@ -38,9 +55,48 @@
 <br>
 
 
+
 ## Container In Docker
 
 **`Docker`는 이러한 `LinuXContainer(LXC)`에 아래와 같은 기능을 추가**하였다.
+
+
+### 완벽한 이식성
+
+**`LXC`가 간간히 System의 특정 구성을 참조**하는데에 반해,
+
+**`Docker`의 `Container`는 DeskTop, Data Center, Cloud 환경에서 별도의 수정없이도 실행**된다.
+
+
+### 경량성
+
+**`LXC`를 사용**할 경우 **다수의 Process**를 **하나의 단일 `Container` 안에서 결합**할 수 있다.
+
+**`Docker`의 `Container`를 사용**할 경우, 
+
+**각 `Container`안에서는 하나의 Process만 실행**할 수 있다.
+
+이를 통해서 **Update나 수정사항 반영을 위해 하나의 Process를 중단하는 동안**에도,
+
+**계속해서 실행 가능한 Application을 Build** 할 수 있다.
+
+
+### 자동 Build
+
+**`Docker`는 Application Souce Code를 기반**으로,
+
+**`Container`를 자동으로 Build**할 수 있다.
+
+
+### Container Version 관리
+
+**`Docker`는 `Container` 이미지의 버전에 대해**,
+
+**Version Rollback**이나 **Build한 사용자 및 방법 등을 Tracking**할 수 있다.
+
+**더나아가 이전 버전과 신규 버전 사이의 변경점만 Upload할 수 있다.**
+
+
 
 <br>
 
