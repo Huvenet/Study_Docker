@@ -34,7 +34,7 @@
    -t : 태그 옵션 image 버전관리를 쉽게 하기 위해<br>
    -f : Dockerfile의 위치 (현재 디렉토리일경우 생략 가능)
    - database
-     - docker build -t ${IMAGE_NAME}
+     - docker build -t ${IMAGE_NAME} .
 8. docker run
    1. local
       - <code>docker run --name &{CONTAINER_NAME} -d -p ${HOST_PORT}&#58;&#36;{CONTAINER_PORT} ${IMAGE_NAME:TAG}</code>
@@ -43,6 +43,10 @@
    2. remote
       - <code>docker push ${USER_NAME}/&#36;{YOUR_REPO}</code>
       - `run`은 IMAGE_NAME을 USER_NAME/YOUR_REPO로 사용
+9. docker compose
+   - 여러 개의 컨테이너로 이루어진 서비스를 구축
+   - 사용 이유
+     - 컨테이너 간 연결이 쉬워짐
 
 <br>
 <br>

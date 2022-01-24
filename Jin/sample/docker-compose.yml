@@ -1,0 +1,25 @@
+version: '1'
+services:
+  database:
+    build: ./database
+    container_name: docker_db
+    ports:
+      - "3306:3306"
+    networks:
+      - test_docker
+  backend:
+    build: ./backend
+    container_name: docker_be
+    ports:
+      - "8080:8080"
+    depends_on:
+      - database
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://database:3306/docker_test?useSSL-false&serverTimezone=UTC&useLegacyDatetimeCode=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: bjpark
+      SPRING_DATASOURCE_PASSWORD: bjpark1234
+    networks:
+      - test_docker
+
+networks:
+    test_docker: 
