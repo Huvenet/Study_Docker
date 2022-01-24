@@ -203,3 +203,52 @@
 
 **`Docker Client`는 하나 이상의 `Docker Daemon`과 통신할 수 있다.**
 
+## Docker Host
+
+**`Docker Host`는 `Docker Engine`을 구동시키는 Server를 생각**하면 된다.
+
+**하나 이상의 `Docker Daemon`을 구동하는 `Server`**로,
+
+<br>
+
+해당 **`Server` 내부에서 `Docker Client(docker)`의 명령**을 토대로,
+
+**자신이 구동중인 `Docker Daemon(dockerd)`로 명령을 전달**한다.
+
+## Docker Object
+
+**`Docker`를 사용**하면 **`Image`, `Container`, `Network & Volume` 등을 만들어 사용**하게 되는데,
+
+**이들을 `Docker Object`라 지칭**한다.
+
+### Image
+
+**`Docker`에서 실질적으로 자주 사용하게되는 `Docker Image`에 대해 조금 더 살펴보면 아래**와 같다.
+
+<br>
+
+**`Image`는 `Docker Container`를 생성할 수 있는 `Template` 형식**이다.
+
+자신만의 `Docker Container` 생성을 위한 `Image`를 만들거나,
+
+`Registry`에 등록된 다른 사용자의 `Image`를 토대로 사용 및 수정하여,
+
+`Docker Container`를 생성할 수 있게 해준다.
+
+<br>
+
+**고유한 `Image` Build를 위해서**는 **`Image` 생성 및 실행을 위한 단계**를,
+
+**정의하기 위한 간단한 구문을 사용해 `Dockerfile`을 만든다.**
+
+이 **`Dockerfile`의 각 명령은 `Image`에 `계층(Layer)`을 생성**하게 된다.
+
+<br>
+
+이 **`Dockerfile`을 변경해 `Image`를 다시 Build** 하면,
+
+**변경된 `계층(Layer)`만 다시 Build** 되어,
+
+**다른 가상화 기술과 비교**해 **`Docker`를 사용하는 이유**인,
+
+**`경량성`을 충족시키는 부분**이다.
