@@ -3,6 +3,8 @@
 # #import
 [Docker란?[IBM]](https://www.ibm.com/kr-ko/cloud/learn/docker)
 
+[Docker(도커)란?[Red Hat]](https://www.redhat.com/ko/topics/containers/what-is-docker)
+
 ---
 
 
@@ -17,6 +19,8 @@
 **`Docker`는 개발자가 개발한 `Source Code(Application)`를 실행하는 표준 방식을 제공**한다.
 
 쉽게 말해 `Docker`는 `Container` 를 위한 운영 체제(O/S)이다.
+
+**`Docker`를 사용**하면 **`Container`를 아주 가벼운 Module 형식 `VM` 처럼 다룰 수 있다.**
 
 <br>
 
@@ -43,6 +47,8 @@
 
 **다수의 Application을 구동** 시킬 수 있다.
 
+
+<br>
 
 ---
 
@@ -98,9 +104,16 @@
 
 **각 `Container`안에서는 하나의 Process만 실행**할 수 있다.
 
+
+![img_1.png](img_1.png)
+
+
 이를 통해서 **Update나 수정사항 반영을 위해 하나의 Process를 중단하는 동안**에도,
 
 **계속해서 실행 가능한 Application을 Build** 할 수 있다.
+
+
+
 
 
 ### 자동 Build
