@@ -157,4 +157,49 @@
 # Docker 구조
 
 
+
+
+**`Docker`의 구조를 살펴보면 아래 그림**과 같다.
+
 ![img_2.png](img_2.png)
+
+
+
+
+
+**`Docker`가 실행될 때 구성 요소는 크게 5가지**로,
+
+**`Docker Daemon`, `Docker Client`, `Doker Host`, `Docker Object`, `Docker Registry`**가 있다.
+
+
+**위 그림을 토대로 구성 요소들을 살펴보면 아래**와 같다.
+
+## Docker Daemon
+
+
+`Docker Daemon`은 `dockerd`로 지칭되며,
+
+**`Docker API` 요청을 수신**하고 **`Docker Object`**인,
+
+**`Image`, `Container`, `Network & Volume`를 관리**한다.
+
+<br>
+
+**`Docker Daemon`은 `Docker Service`관리를 위해 다른 `Docker Daemon`과 통신할 수 있다.**
+
+
+## Docker Client
+
+**`Docker Client`는 `docker`로 지칭**되며,
+
+**`Docker`를 사용하는 사용자, 개발자가 `Docker`와 상호 작용하는 기본 방법**이다.
+
+
+<br>
+
+**`Docker Client(docker)`는 `docker run`와 같은 명령**을,
+
+**`Docker Daemon(dockerd)`에게 보냄**으로 써 **`Docker API`를 요청**한다.
+
+**`Docker Client`는 하나 이상의 `Docker Daemon`과 통신할 수 있다.**
+
