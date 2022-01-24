@@ -58,7 +58,25 @@
 
 ## Container In Docker
 
-**`Docker`는 이러한 `LinuXContainer(LXC)`에 아래와 같은 기능을 추가**하였다.
+
+`Docker`에서 `Container`의 개념은,
+
+**`Application` Source Code**를 **임의의 환경에서 실행하기 위해 필요한**,
+
+**`O/S` Library 및 종속 항목**과 **결합**하여 **실행 가능한 표준 Component**이다.
+
+이러한 **`Container`는 분산형으로 분화되는 Application의 실행 환경 Delivery를 간소화**해주며,
+
+**Cloud 환경으로 이전되는 개발환경 상황에서 유용하게 사용**된다.
+
+<br>
+
+
+---
+
+## Docker VS LXC
+
+**`Docker`는 `LinuXContainer(LXC)`에 아래와 같은 기능을 추가**하였다.
 
 
 ### 완벽한 이식성
@@ -97,21 +115,20 @@
 **더나아가 이전 버전과 신규 버전 사이의 변경점만 Upload할 수 있다.**
 
 
+### 재사용성
 
-<br>
+**새로운 `Container`를 생성**할 때,
 
-`Docker`에서 `Container`의 개념은,
+**기존에 사용하던 `Container`를 Template 형식으로 재사용**하여,
 
-**`Application` Source Code**를 **임의의 환경에서 실행하기 위해 필요한**,
+**기본 이미지로 사용하며 생성**할 수 있다.
 
-**`O/S` Library 및 종속 항목**과 **결합**하여 **실행 가능한 표준 Component**이다.
 
-이러한 **`Container`는 분산형으로 분화되는 Application의 실행 환경 Delivery를 간소화**해주며,
+### 공유성
 
-**Cloud 환경으로 이전되는 개발환경 상황에서 유용하게 사용**된다.
+**자신이 생성한 `Container` 이미지**나 **다른 사람이 생성한 `Container` 이미지**를,
 
-<br>
-
+**`Open Source Registry`에 등록 및 참조하여 사용**할 수 있다.
 
 
 ---
