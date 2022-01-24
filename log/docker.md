@@ -10,6 +10,10 @@
 
 **`Docker`는 `Container`형 `Application`**의 **빌드, 배치, 관리 기능을 제공하는 오픈 소스 플랫폼**이다.
 
+<br>
+
+**`Docker`는 `LinuXContainer`를 생성 및 사용할 수 있도록 하는 Container화 기술**로,
+
 **`Docker`는 개발자가 개발한 `Source Code(Application)`를 실행하는 표준 방식을 제공**한다.
 
 쉽게 말해 `Docker`는 `Container` 를 위한 운영 체제(O/S)이다.
