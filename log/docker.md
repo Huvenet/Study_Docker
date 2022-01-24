@@ -1,5 +1,3 @@
-# Docker
-
 # #import
 
 [Docker [Docker.com]](https://www.docker.com/)
@@ -35,7 +33,7 @@
 **아래 그림**은 **`Container`와 `가상 머신(Virtual Machine)`의 차이점**을 보여준다.
 
 
-![img.png](img.png)
+![](https://images.velog.io/images/gillog/post/460a4eb5-a7fd-4f7a-8b4a-83822974db7a/image.png)
 
 
 **`VM` 환경에서는 Server 위 `Hypervisor`를 통해 여러개의 `O/S`를 구동**시켜,
@@ -177,7 +175,7 @@
 ## Docker Daemon
 
 
-`Docker Daemon`은 `dockerd`로 지칭되며,
+**`Docker Daemon`은 `dockerd`로 지칭**되며,
 
 **`Docker API` 요청을 수신**하고 **`Docker Object`**인,
 
