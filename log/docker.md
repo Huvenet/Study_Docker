@@ -1,6 +1,9 @@
 # Docker
 
 # #import
+
+[Docker [Docker.com]](https://www.docker.com/)
+
 [Docker란?[IBM]](https://www.ibm.com/kr-ko/cloud/learn/docker)
 
 [Docker(도커)란?[Red Hat]](https://www.redhat.com/ko/topics/containers/what-is-docker)
@@ -149,3 +152,9 @@
 
 
 ---
+
+
+# Docker 구조
+
+
+![img_2.png](img_2.png)
