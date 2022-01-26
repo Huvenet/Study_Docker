@@ -11,7 +11,7 @@
 
 ## Docker?
 
-**`Docker`는 `Container`형 `Application`**의 **빌드, 배치, 관리 기능을 제공하는 오픈 소스 플랫폼**이다.
+** `Docker`는 `Container`형 `Application` **의 **빌드, 배치, 관리 기능을 제공하는 오픈 소스 플랫폼**이다.
 
 <br>
 
